@@ -1,4 +1,4 @@
-public interface Deplacement {
+interface Deplacement {
     void seDeplacer();
 
     default void deplacementEnX() {

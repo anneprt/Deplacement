@@ -10,6 +10,13 @@ public class MoyenDeTransport implements Deplacement {
 
     }
 
+    protected int limitation(int tmp, int max) {
+        tmp = VITESSE_INITIALE * tmp;
+        if (tmp < 0) return 0;
+        else if (tmp > max) return max;
+        else return tmp;
+    }
+
     public void afficher() {
         System.out.println("Position en " + x + ", " + y);
     }
